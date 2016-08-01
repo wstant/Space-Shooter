@@ -1,0 +1,114 @@
+ <!--_______  .__        __       _________                                        
+	 \      \ |__| ____ |  | __  /   _____/_____   ____   ____   ____  ___________ 
+	 /   |   \|  |/ ___\|  |/ /  \_____  \\____ \_/ __ \ /    \_/ ___\/ __ \_  __ \
+	/    |    \  \  \___|    <   /        \  |_> >  ___/|   |  \  \__\  ___/|  | \/
+	\____|__  /__|\___  >__|_ \ /_______  /   __/ \___  >___|  /\___  >___  >__|   
+	        \/        \/     \/         \/|__|        \/     \/     \/    \/       
+	            ____                                                               
+	           /  _ \                                                              
+	           >  _ </\                                                            
+	          /  <_\ \/                                                            
+	          \_____\ \                                                            
+	                 \/                                                            
+	 __      __.__.__  .__      _________ __                 __                    
+	/  \    /  \__|  | |  |    /   _____//  |______    _____/  |_  ____   ____     
+	\   \/\/   /  |  | |  |    \_____  \\   __\__  \  /    \   __\/  _ \ /    \    
+	 \        /|  |  |_|  |__  /        \|  |  / __ \|   |  \  | (  <_> )   |  \   
+	  \__/\  / |__|____/____/ /_______  /|__| (____  /___|  /__|  \____/|___|  /   
+	       \/                         \/           \/     \/                 \/    
+-->                                                                    
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Space Shooter</title>
+	<link src="style.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="jquery.hotkeys.js"></script>
+	<script src="key_status.js"></script>
+	<script src="util.js" type="text/javascript"></script>
+	<script src="sprite.js"></script>
+	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+
+	<style>
+
+		div {
+			width: 20%;
+			
+			display: flex;
+			margin: auto;
+			justify-content: center;
+		}
+
+		.score {
+
+			text-align: center;
+		}
+
+		h4 {
+			color: #613864;
+		}
+		
+		canvas {
+			-webkit-box-shadow: 0px 13px 5px -5px rgba(194,40,40,1);
+			-moz-box-shadow: 0px 13px 5px -5px rgba(194,40,40,1);
+			box-shadow: 0px 13px 5px -5px rgba(194,40,40,1);
+			margin: 50px 0px 25px 0px;
+			border: 10px groove #613864;
+		}
+
+		p {
+			color: #613864;
+			font-weight: 800;
+			font-size: 20px;
+		}
+
+		body {
+			background: #FE4E6E;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			font-family: 'Bungee Shade';
+		}
+
+
+		.wrapper {
+			width: 80%;
+			margin: 0 auto;
+			max-width: 1300px;
+		}
+
+		header h1 {
+			color: #613864;
+			font-size: 60px;
+			font-weight: 900;
+			text-align: center;
+			-webkit-box-shadow: -15px 10px 5px -5px rgba(194,40,40,1);
+			-moz-box-shadow: -15px 10px 5px -5px rgba(194,40,40,1);
+			box-shadow: -15px 10px 5px -5px rgba(194,40,40,1);
+		}
+	</style>
+</head>
+
+<body class="animated rollIn wrapper">
+
+	<header>
+		<h1 class="animated zoomIn">OH CAPTAIN, MY CAPTAIN</h1>
+	</header>
+		<script rel="script" src="game.js"></script>
+		<div class="score animated">
+			<h4></h4>
+			<p>
+				0	
+			</p>
+		</div>	
+	<button class="btn btn-warning" type="button" onClick="window.location.reload();">Restart Game</button>
+	<audio src="01 A Night Of Dizzy Spells.mp3" autoplay loop controls ></audio>
+
+</body>
+</html>
